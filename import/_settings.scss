@@ -1,0 +1,53 @@
+// -----
+// Grids
+// -----
+
+$susy: (
+    'columns': susy-repeat(12),
+    'gutters': 40px,
+    'container-spread': 'wide'
+);
+
+$susy-desktop: (
+    'columns': susy-repeat(12),
+    'gutters': 30px,
+    'container-spread': 'wide'
+);
+
+$susy-tablet: (
+    'columns': susy-repeat(12),
+    'gutters': 20px,
+    'container-spread': 'wide'
+);
+
+$susy-mobile: (
+    'columns': susy-repeat(12),
+    'gutters': 10px,
+    'container-spread': 'wide'
+);
+
+// ----------
+// Containers
+// ----------
+
+$container-tablet-width: 720px !default;
+$container-desktop-width: 940px !default;
+$container-large-width: 1100px !default;
+
+// -----------
+// Breakpoints
+// -----------
+
+// Mobile
+$breakpoint-mobile-max: 768px !default;
+
+// Tablet
+$breakpoint-tablet-min: $breakpoint-mobile-max + 1;
+$breakpoint-tablet-max: 992px !default;
+
+// Desktop
+$breakpoint-desktop-min: $breakpoint-tablet-max + 1;
+$breakpoint-desktop-max: 1200px !default;
+
+// Large Desktop
+$breakpoint-large-desktop-min: $breakpoint-desktop-max + 1;

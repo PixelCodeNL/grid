@@ -1,0 +1,25 @@
+// --------------------
+// Responsive utilities
+// --------------------
+
+@mixin responsive-invisibility($parent) {
+    #{$parent} {
+        display: none !important;
+    }
+}
+
+@media (max-width: $breakpoint-mobile-max) {
+    @include responsive-invisibility('.hidden-xs');
+}
+
+@media (min-width: $breakpoint-tablet-min) and (max-width: $breakpoint-tablet-max) {
+    @include responsive-invisibility('.hidden-sm');
+}
+
+@media (min-width: $breakpoint-desktop-min) and (max-width: $breakpoint-desktop-max) {
+    @include responsive-invisibility('.hidden-md');
+}
+
+@media (min-width: $breakpoint-large-desktop-min) {
+    @include responsive-invisibility('.hidden-lg');
+}
