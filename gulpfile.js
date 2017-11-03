@@ -5,8 +5,8 @@ var plumber = require('gulp-plumber');
 /* Set src / distribution paths */
 var src = 'src';
 var paths = {
-    sassGlobal: src + '/scss/**/*.scss',
-    sassCompile: src + '/scss/*.scss'
+    sassGlobal: src + '/**/*.scss',
+    sassCompile: src + '/*.scss'
 };
 
 /* Sass */
