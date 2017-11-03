@@ -1,3 +1,11 @@
+// ------------
+// Dependencies
+// ------------
+
+@import 'dependencies/normalize-scss/_normalize.scss';
+@import 'dependencies/susy/sass/susy';
+@import 'dependencies/susy/sass/plugins/svg-grid';
+
 // ------
 // Import
 // ------
@@ -7,10 +15,3 @@
 @import 'import/mixins/mediaqueries';
 @import 'import/mixins/responsive-utilities';
 @import 'import/helpers';
-
-// -----
-// Debug
-// -----
-
-/* Debugmode can be enabled by setting $grid-debug to true somewhere in your SCSS code */
-@import '../../../packages/susy/sass/plugins/svg-grid';
