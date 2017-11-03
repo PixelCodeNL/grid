@@ -16,9 +16,9 @@ Import the 'src/_grid.scss' file and the necessary dependencies into your own SC
 ```scss
 // Import Pixel&Code Grid
 @import '**Your packages path**/normalize-scss/_normalize.scss';
-@import '**Your packages path**/pixelcode-grid/src/grid';
 @import '**Your packages path**/susy/sass/susy';
 @import '**Your packages path**/susy/sass/plugins/svg-grid';
+@import '**Your packages path**/pixelcode-grid/src/grid';
 ```
 
 ### Options
