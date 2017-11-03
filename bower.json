@@ -5,7 +5,7 @@
         "Pixel&Code <dev@pixelcode.nl>"
     ],
     "description": "Pixel&Code Susy Grid package",
-    "main": "_grid.scss",
+    "main": "src/_grid.scss",
     "keywords": [
         "Pixel&Code",
         "grid",
