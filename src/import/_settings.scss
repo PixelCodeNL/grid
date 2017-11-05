@@ -4,33 +4,15 @@
 
 $grid-debug: false !default;
 
-// -----
-// Grids
-// -----
+// ---------------
+// Grids variables
+// ---------------
 
-$susy: (
-    'columns': susy-repeat(12),
-    'gutters': 40px,
-    'container-spread': 'wide'
-);
-
-$susy-desktop: (
-    'columns': susy-repeat(12),
-    'gutters': 30px,
-    'container-spread': 'wide'
-);
-
-$susy-tablet: (
-    'columns': susy-repeat(12),
-    'gutters': 20px,
-    'container-spread': 'wide'
-);
-
-$susy-mobile: (
-    'columns': susy-repeat(12),
-    'gutters': 10px,
-    'container-spread': 'wide'
-);
+/* You need to define these in your own project, see README instructions */
+$susy: null !default;
+$susy-desktop: null !default;
+$susy-tablet: null !default;
+$susy-mobile: null !default;
 
 // ----------
 // Containers
