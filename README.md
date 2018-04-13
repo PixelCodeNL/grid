@@ -1,6 +1,6 @@
 # Pixel&Code Susy Grid
 
-This Susy 3 based grid is used internally by development agency Pixel&Code. Use it at your own risk.
+:warning: This Susy 3 based grid is used **internally** by development agency Pixel&Code. Changes might break your code. Use it at your own risk.
 
 It is inspired by the Bootstrap 3 way of responsive breakpoints (mobile, tablet, desktop, large-desktop), so if you're
 used to Bootstrap but want to use a more refined Grid-only solution without thousands of CSS lines, this might be it!
