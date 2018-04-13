@@ -67,6 +67,12 @@
     $direction: if($type == push, 'left', 'right');
 
     @if(type_of($push) == map) {
+        // Check zero's
+        @if(index(map_values($push), 0)) {
+            @error "Invalid integer '0' found for column-shift";
+        }
+
+        // Devices
         @if(map_has_key($push, mobile)) {
             @include mobile {
                 #{$direction}: span(map_get($push, mobile) wide, if($config != $susy, $config, $susy-mobile));
