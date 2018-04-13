@@ -14,31 +14,39 @@
  */
 @mixin column($span, $queries : (), $config : $susy) {
 
+    float: left;
+
     @include mobile {
         width: span(if(map_has_key($queries, mobile), map-get($queries, mobile), $span), if($config != $susy, $config, $susy-mobile));
         margin-left: (gutter(if($config != $susy, $config, $susy-mobile)) / 2);
         margin-right: (gutter(if($config != $susy, $config, $susy-mobile)) / 2);
+        @if index(map-get($queries, mobile), 'last') {
+            float: right;
+        }
     }
     @include tablet {
         width: span(if(map_has_key($queries, tablet), map-get($queries, tablet), $span), if($config != $susy, $config, $susy-tablet));
         margin-left: (gutter(if($config != $susy, $config, $susy-tablet)) / 2);
         margin-right: (gutter(if($config != $susy, $config, $susy-tablet)) / 2);
+        @if index(map-get($queries, tablet), 'last') {
+            float: right;
+        }
     }
     @include desktop {
         width: span(if(map_has_key($queries, desktop), map-get($queries, desktop), $span), if($config != $susy, $config, $susy-desktop));
         margin-left: (gutter(if($config != $susy, $config, $susy-desktop)) / 2);
         margin-right: (gutter(if($config != $susy, $config, $susy-desktop)) / 2);
+        @if index(map-get($queries, desktop), 'last') {
+            float: right;
+        }
     }
     @include large-desktop {
         width: span(if(map_has_key($queries, large-desktop), map-get($queries, large-desktop), $span), $config);
         margin-left: (gutter($config) / 2);
         margin-right: (gutter($config) / 2);
-    }
-
-    @if index($span, 'last') {
-        float: right;
-    } @else {
-        float: left;
+        @if index(map-get($queries, large-desktop), 'last') {
+            float: right;
+        }
     }
 
 }
